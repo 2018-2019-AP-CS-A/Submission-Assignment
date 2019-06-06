@@ -25,6 +25,30 @@ public class You{
 	private String favoriteAnimal;
 	private int age;
 
-	// Write your code here
+	public You()
+	{
+		firstName = "Ashley";
+		lastName = "Chiu";
+		favoriteAnimal = "Class Pet - Dennis";
+		int age = 5; //She looks 5 compared to everyone else
+	}
+	
+	String getFullName()
+	{
+		return firstName + " " + lastName;
+	}
+	
+	String setFavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return animal;
+	}
+	
+	int happyBirthday()
+	{
+		System.out.println("Happy Birthday");
+		age++;
+		return age;
+	}
 	
 }
